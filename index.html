@@ -1,60 +1,87 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <!-- Metadata goes here -->
-        <title>Sample Page Title</title>
-    </head>
-    <body>
-        <!-- Content goes here -->
-         <h1 name="header" id="header">Most Importan  (and largest) Heading</h1>
-         <h6>Least Importan (and Smallest) Heading</h6>>
-         <h1>Most Important (and Largest) Heading</h1>
-    <p id="name" name="name">This is some text. The content within this paragraph element can be as short or as long as needed.</p>
-    <h6>Least Important (and Smallest) Heading</h6>
-    <p>This is another paragraph of text.</p>
-    <p>This is some text that needs to be split up <br>here, <br>here, and <br>here.</p> 
-    <a href="https://www.ibm.com">IBM</a>
-    <a href="https://www.ibm.com" target="_blank">IBM</a>
-    <a href="#section">Link to section</a>
-    <u1>
-        <li>This is a bullet point</li>
-        <li>The items in this list have no particular order</li>
-        <li>Each item will appear as a bullet, rather than a number </li>
-    </u1>
-    <ol>
-        <li>This is an ordered list </li>
-        <li>The items in this list have a particular order </li>
-        <li>Each item will be numbered, starting from 1 </li>
-        <li>This is the fourth point in the list </li>
-    </ol>
-    <table id="students" name="students">
-        <tr>
-            <th>Heading 1</th>
-            <th>Heading 2</th>
-            <th>Heading 3</th>
-        </tr>
-        <tr>
-            <td>H1 - Data Item 1</td>
-            <td>H2 - Data Item 1</td>
-            <td>H3 - Data Item 1</td>
-        </tr>
-        <tr>
-            <td>H1 - Data Item 2</td>
-            <td>H2 - Data Item 2</td>
-            <td>H3 - Data Item 2</td>
-        </tr>
-        <tr>
-            <td>H1 - Data Item 3</td>
-            <td>H2 - Data Item 3</td>
-            <td>H3 - Data Item 3</td>
-        </tr>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+    <style>
+        body {
+            background-color: lightpink;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            color: neonpink;
+            text-align: center;
+        }
+        table {
+            border: 2px solid purple;
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid purple;
+            padding: 10px;
+            text-align: center;
+        }
+        form {
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+
+    <br>
+
+    <p>Hello bsf Vinu</p>
+
+    <br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Info</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Taylor Swift</td>
+                <td>Details about Taylor Swift</td>
+            </tr>
+            <tr>
+                <td>Rachel Herring</td>
+                <td>Details about Rachel Herring</td>
+            </tr>
+            <tr>
+                <td>Ashley Brunet</td>
+                <td>Details about Ashley Brunet</td>
+            </tr>
+        </tbody>
     </table>
-<!-- External Image -->
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/440px-IBM_logo.svg.png" alt="IBM Logo" width="300" height="300">
-<!-- Local Images -->
-<img src="images/IBMlogo.png" alt="IBM Logo" width="300" height="300">
-    ...
-   
-    <h1 id="section"> Section</h1>
-    </body>
+
+    <form onsubmit="handleSubmit(event)">
+        <label for="username">User Name:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent the form from submitting
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            alert(`The username is ${username} and the password is ${password}`);
+        }
+    </script>
+    <br>
+    <a href="https://www.playadopt.me/" target="_blank">HAILIES FAV GAME ADOPT ME WEbSITE ADOPT ME </a>
+    <img src="https://static.wikia.nocookie.net/roblox/images/b/bc/AdoptMeToyLogo.png/revision/latest?cb=20230706071757" alt="IBM Logo" width="300" height="300">
 </html>
